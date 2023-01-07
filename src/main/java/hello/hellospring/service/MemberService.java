@@ -41,16 +41,16 @@ public class MemberService {
         return memberRepository.findById(memberId);
     }
 
-    @Configuration
-    public static class SpringConfig {
-        @Bean
-        public MemberService memberService(){
-            return new MemberService(memberRepository());
-        }
-
-        @Bean
-        public MemberRepository memberRepository(){
-            return new MemoryMemberRepository();
-        }
-    }
+//    @Configuration
+//    public static class SpringConfig {
+//        @Bean
+//        public MemberService memberService(){
+//            return new MemberService(memberRepository());
+//        }
+//
+//        @Bean
+//        public MemberRepository memberRepository(){
+//            return new MemoryMemberRepository();
+//        }
+//    }
 }
